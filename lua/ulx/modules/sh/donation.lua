@@ -10,7 +10,7 @@ function ulx.title( calling_ply, target_plys, title )
 		target_plys[ i ]:SetPData( "customtitle", title )
     end
     
-ulx.fancyLogAdmin( calling_ply, "#A set #T's title as #s.", target_plys, title )
+ulx.fancyLogAdmin( calling_ply, "#A set #T's title to #s.", target_plys, title )
 end
 local title = ulx.command( CATEGORY_NAME, "ulx title", ulx.title, "!title" )
 title:addParam{ type=ULib.cmds.PlayersArg }
@@ -27,7 +27,7 @@ function ulx.titlecolor( calling_ply, target_plys, titlecolor )
 		target_plys[ i ]:SetPData( "customtitlecolor", titlecolor )
     end
     
-ulx.fancyLogAdmin( calling_ply, "#A set #T's titlecolor as #s.", target_plys, titlecolor )
+ulx.fancyLogAdmin( calling_ply, "#A set #T's titlecolor to #s.", target_plys, titlecolor )
 end
 local titlecolor = ulx.command( CATEGORY_NAME, "ulx titlecolor", ulx.titlecolor, "!titlecolor" )
 titlecolor:addParam{ type=ULib.cmds.PlayersArg }
